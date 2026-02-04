@@ -4,25 +4,22 @@ try:
 
     print("Try to connected to Mariadb Server")
     connection =  mariadb.connect(host='172.20.30.13',
-                                  database='projet_pedagogoique',
+                                  database='projet_pedagogique',
                                   user="admin",
                                   password="fourcade")
-    cursor = connection.cursor()
-    cursor.execute("select database();")
-    record = cursor.fetchone()
-    print("You are connected to database: ", record)
 
     cursor = connection.cursor()
-    cursor = execute("show databases;")
+    cursor.execute("show databases;")
     records = cursor.fetchall()
     print("Databases: ", records)
-
-    if connection.is_connected():
-        cursor.closed()
-        connection._closed()
-        print("Mariadb connection is closed")
-    db_info = connection.get_server_info()
+    db_info = connection.get_server_version()
     print("Connected to Mariadb Server version", db_info)
+
+    if connection.server_status:
+        cursor.close()
+        connection.close()
+        print("Mariadb connection is closed")
+
 
 
 except Error as e:
