@@ -1,5 +1,8 @@
 import mariadb
 from mariadb import Error
+tension_batterie=17.5
+tension_du_panneau=12.5
+
 try:
 
     print("Try to connected to Mariadb Server")
@@ -9,17 +12,14 @@ try:
                                   password="fourcade")
 
     cursor = connection.cursor()
-    cursor.execute("show databases;")
-    records = cursor.fetchall()
-    print("Databases: ", records)
-    db_info = connection.get_server_version()
-    print("Connected to Mariadb Server version", db_info)
+
+    cursor.execute("INSERT INTO info_panneau (tension_batterie,tension_du_panneau) VALUES (?,?)" , (tension_batterie, tension_du_panneau))
+    connection.commit()
 
     if connection.server_status:
         cursor.close()
         connection.close()
         print("Mariadb connection is closed")
-
 
 
 except Error as e:
