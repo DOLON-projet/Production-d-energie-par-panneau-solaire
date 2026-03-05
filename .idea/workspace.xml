@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64635f9c-7044-445e-b109-94e90c4ccd58" name="Changes" comment="lecture et implementation des variable predefini dans la base de donnée distante de mariadb">
+    <list default="true" id="64635f9c-7044-445e-b109-94e90c4ccd58" name="Changes" comment="lecture et implementation des variable predefini dans la base de donnée distante de mariadb #2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program_lien_base_de_donnée.py" beforeDir="false" afterPath="$PROJECT_DIR$/Program_lien_base_de_donnée.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_panneau.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_panneau.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,21 +46,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Program_lien_base_de_donnée.executor": "Run",
-    "Python.Projet_panneau.executor": "Run",
-    "Python.Unnamed.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Program_lien_base_de_donnée.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Projet_panneau.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Program_lien_base_de_donnée" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Projet_Panneau_Solaire" />
@@ -111,7 +111,9 @@
       <workItem from="1770223266439" duration="832000" />
       <workItem from="1770299071755" duration="2497000" />
       <workItem from="1770815343685" duration="6327000" />
-      <workItem from="1772722703280" duration="2630000" />
+      <workItem from="1772722703280" duration="2759000" />
+      <workItem from="1772725538885" duration="15000" />
+      <workItem from="1772725582658" duration="875000" />
     </task>
     <task id="LOCAL-00001" summary="lecture du fichier (étape suivante : décodage)">
       <option name="closed" value="true" />
@@ -169,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770820076628</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="lecture et implementation des variable predefini dans la base de donnée distante de mariadb #2">
+      <option name="closed" value="true" />
+      <created>1772725367026</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1772725367026</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,7 +214,8 @@
     <MESSAGE value="connection mariadb" />
     <MESSAGE value="connection mariadb finalise" />
     <MESSAGE value="lecture et implementation des variable predefini dans la base de donnée distante de mariadb" />
-    <option name="LAST_COMMIT_MESSAGE" value="lecture et implementation des variable predefini dans la base de donnée distante de mariadb" />
+    <MESSAGE value="lecture et implementation des variable predefini dans la base de donnée distante de mariadb #2" />
+    <option name="LAST_COMMIT_MESSAGE" value="lecture et implementation des variable predefini dans la base de donnée distante de mariadb #2" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Projet_Panneau_Solaire$Program_lien_base_de_donnée.coverage" NAME="Program_lien_base_de_donnée Coverage Results" MODIFIED="1770827535527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
