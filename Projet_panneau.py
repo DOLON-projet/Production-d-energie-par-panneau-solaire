@@ -10,8 +10,8 @@ tension_Batterie = donnees['tB']
 courant_panneau_solaire = donnees['cP']
 courant_Batterie = donnees['cB']
 temperature_armoire = donnees['tA']
-print(tension_panneau_solaire)
-print(tension_Batterie)
-print(courant_panneau_solaire)
-print(courant_Batterie)
-print(temperature_armoire)
+print("tension panneau : ",tension_panneau_solaire)
+print("tension baterie : ",tension_Batterie)
+print("courant panneau solaire : ",courant_panneau_solaire)
+print("courant batterie : ",courant_Batterie)
+print("temperature armoire : ",temperature_armoire)
