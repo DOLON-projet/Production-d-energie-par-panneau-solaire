@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="64635f9c-7044-445e-b109-94e90c4ccd58" name="Changes" comment="lecture et implementation des variable predefini dans la base de donnée distante de mariadb #2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet_panneau.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_panneau.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +213,23 @@
       <option name="project" value="LOCAL" />
       <updated>1772726499162</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="lecture et implementation des variable predefini dans la base de donnée distante de mariadb #2">
+      <option name="closed" value="true" />
+      <created>1773235695649</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1773235695649</updated>
+    </task>
+    <task id="LOCAL-00011" summary="lecture et implementation des variable predefini dans la base de donnée distante de mariadb #2">
+      <option name="closed" value="true" />
+      <created>1773235773377</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1773235773377</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,6 +264,7 @@
     <MESSAGE value="connection mariadb" />
     <MESSAGE value="connection mariadb finalise" />
     <MESSAGE value="lecture et implementation des variable predefini dans la base de donnée distante de mariadb" />
+    <MESSAGE value="lecture et implementation des variable predefini dans la base de donnée distante de mariadb #3" />
     <MESSAGE value="lecture et implementation des variable predefini dans la base de donnée distante de mariadb #2" />
     <option name="LAST_COMMIT_MESSAGE" value="lecture et implementation des variable predefini dans la base de donnée distante de mariadb #2" />
   </component>
