@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64635f9c-7044-445e-b109-94e90c4ccd58" name="Changes" comment="lecture et implementation des variable predefini dans la base de donnée distante de mariadb #3">
-      <change beforePath="$PROJECT_DIR$/.idea/Projet_Panneau_Solaire.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Projet_Panneau_Solaire.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="64635f9c-7044-445e-b109-94e90c4ccd58" name="Changes" comment="lecture et implementation des variable predefini dans la base de donnée distante de mariadb et prise de mot de passe dans le serveur">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program_lien_base_de_donnée.py" beforeDir="false" afterPath="$PROJECT_DIR$/Program_lien_base_de_donnée.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_panneau.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_panneau.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_transcript_json.json" beforeDir="false" afterPath="$PROJECT_DIR$/test_transcript_json.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -243,7 +241,23 @@
       <option name="project" value="LOCAL" />
       <updated>1773235810570</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="lecture et implementation des variable predefini dans la base de donnée distante de mariadb et prise de mot de passe dans le serveur">
+      <option name="closed" value="true" />
+      <created>1774448890205</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1774448890205</updated>
+    </task>
+    <task id="LOCAL-00014" summary="lecture et implementation des variable predefini dans la base de donnée distante de mariadb et prise de mot de passe dans le serveur">
+      <option name="closed" value="true" />
+      <created>1774448899808</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1774448899808</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +294,8 @@
     <MESSAGE value="lecture et implementation des variable predefini dans la base de donnée distante de mariadb" />
     <MESSAGE value="lecture et implementation des variable predefini dans la base de donnée distante de mariadb #2" />
     <MESSAGE value="lecture et implementation des variable predefini dans la base de donnée distante de mariadb #3" />
-    <option name="LAST_COMMIT_MESSAGE" value="lecture et implementation des variable predefini dans la base de donnée distante de mariadb #3" />
+    <MESSAGE value="lecture et implementation des variable predefini dans la base de donnée distante de mariadb et prise de mot de passe dans le serveur" />
+    <option name="LAST_COMMIT_MESSAGE" value="lecture et implementation des variable predefini dans la base de donnée distante de mariadb et prise de mot de passe dans le serveur" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Projet_Panneau_Solaire$Program_lien_base_de_donnée.coverage" NAME="Program_lien_base_de_donnée Coverage Results" MODIFIED="1770827535527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
