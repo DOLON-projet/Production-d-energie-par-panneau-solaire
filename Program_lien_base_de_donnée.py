@@ -1,7 +1,21 @@
-import mariadb                             #lien avec la base de donné
-from mariadb import Error                  #lien avec la bibliotèque d'erreur de mariadb
-tension_batterie=12                        #initialisation de variables d'exemple
-tension_du_panneau=10.5
+import mariadb                      #lien avec la base de donné
+import json
+from mariadb import Error                  #lien avec la bibliotèque d'erreur
+
+
+tension_batterie=2                       #initialisation de variables d'exemple
+tension_du_panneau=20                              #importation de la bibliotèque json
+
+
+with open('mdp.json','r') as op:
+    read_data = op.read()  # creation de variable qui lit les données
+    op.close()  # fermeture du fichier json
+
+
+    # mise en place des données dans les variables correspondantes
+donnees = json.loads(read_data)
+mot_de_passe = donnees['mdp']
+
 
 try:
 
@@ -9,7 +23,7 @@ try:
     connection =  mariadb.connect(host='172.20.30.13',             #adresse de l'hôte
                                   database='projet_pedagogique',   #connection a la base de donné "projet_pedagogique"
                                   user="admin",                    #nom de l'utulisateur "admin"
-                                  password="fourcade")             #mot de passe "fourcade"
+                                  password= mot_de_passe)             #mot de passe "fourcade"
 
     cursor = connection.cursor()          #création du de l'objet "cursor" qui permet la modification
 
