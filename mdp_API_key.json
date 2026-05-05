@@ -1,0 +1,8 @@
+{
+  "mdp_API_key":"NNSXS.OBSYDSI5RSWV4YDDP3JHLMDWJQNADNYE33TFOFI.YNDGHAO6UKBVXU3Q6WSGS6CYOAQHOXSDN4RWN5DXC4UY44P4QWPA",
+  "DevEUI":"2CF7F12051004357",
+  "AppEUI": "526973696E674846",
+  "ID": "emetteur-recepteur",
+  "THINGS_NETWORK_URL": "eu1.cloud.thethings.network",
+  "client": "info-panneau@ttn"
+}
