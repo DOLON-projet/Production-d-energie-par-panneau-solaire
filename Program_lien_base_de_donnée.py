@@ -1,3 +1,4 @@
+from os.path import split
 from pickletools import uint8
 import paho.mqtt.client as mqtt
 import json
@@ -54,10 +55,21 @@ try:
         donnee_recues = json.loads(str(msg.payload.decode('utf-8')))
         print(donnee_recues['uplink_message']['frm_payload'])
         encoded = str(donnee_recues['uplink_message']['frm_payload'])
-        encoded = str(base64.b64decode(encoded))
-        print(encoded)
-        #donnee = json.loads(str(base64.b64decode(encoded)))
-       # print(donnee)
+        encoded = base64.b64decode(encoded)
+        print(encoded.hex())
+        valeurs = encoded.hex()
+        for i in range(0,len(valeurs),2):
+            for cle in valeurs[i:i+2]:
+                if cle in valeurs:
+            tP = ""
+            tB = ""
+            cP = ""
+            CB = ""
+            tA = ""
+            valeurs_total = valeurs[i]+valeurs[i+1]
+            print(valeurs_total)
+            print("---------")
+            print(int(valeurs_total,16))
         print("##########################################################################")
 
 
