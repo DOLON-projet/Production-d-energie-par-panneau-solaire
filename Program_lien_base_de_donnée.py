@@ -57,19 +57,22 @@ try:
         encoded = str(donnee_recues['uplink_message']['frm_payload'])
         encoded = base64.b64decode(encoded)
         print(encoded.hex())
-        valeurs = encoded.hex()
-        for i in range(0,len(valeurs),2):
-            for cle in valeurs[i:i+2]:
-                if cle in valeurs:
-            tP = ""
-            tB = ""
-            cP = ""
-            CB = ""
-            tA = ""
-            valeurs_total = valeurs[i]+valeurs[i+1]
-            print(valeurs_total)
-            print("---------")
-            print(int(valeurs_total,16))
+        valeurs =  encoded.hex()
+        info_panneau={}
+            
+        info_panneau["tP"]=int(valeurs[0:2],16)
+
+        info_panneau["tB"]=int(valeurs[2:4],16)
+
+        info_panneau["cP"]=int(valeurs[4:6],16)
+
+        info_panneau["cB"]=int(valeurs[6:8],16)
+
+        info_panneau["tA"]=int(valeurs[8:10],16)
+        print(info_panneau)
+
+
+            
         print("##########################################################################")
 
 
@@ -92,7 +95,7 @@ try:
             password=mot_de_passe
             )
         cursor = connection.cursor()
-        query = "INSERT INTO info_panneau (tension_batterie, tension_du_panneau) VALUES (?, ?)"
+        query = "INSERT INTO info_panneau (tension_batterie, tension_panneau) VALUES (?, ?)"
         cursor.execute(query, (float(tension_batt), float(tension_panneau)))
         connection.commit()
         cursor.close()
