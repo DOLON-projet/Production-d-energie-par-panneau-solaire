@@ -69,7 +69,7 @@ try:
         info_panneau["cB"]=int(valeurs[6:8],16)
 
         info_panneau["tA"]=int(valeurs[8:10],16)
-        print(info_panneau)
+        save_to_mariadb(info_panneau)
 
 
             
@@ -85,7 +85,7 @@ try:
     mqttc.loop_forever()
 
 
-    def save_to_mariadb(tension_batt, tension_panneau):
+    def save_to_mariadb(info_panneaudb):
         """Connexion et insertion dans MariaDB"""
 
         connection = mariadb.connect(
@@ -95,8 +95,8 @@ try:
             password=mot_de_passe
             )
         cursor = connection.cursor()
-        query = "INSERT INTO info_panneau (tension_batterie, tension_panneau) VALUES (?, ?)"
-        cursor.execute(query, (float(tension_batt), float(tension_panneau)))
+        query = "INSERT INTO info_panneau (tension_panneau,courant_panneau) VALUES (?, ?)"
+        cursor.execute(query, float(info_panneaudb["tP"]), float(info_panneaudb["cP"]))
         connection.commit()
         cursor.close()
         connection.close()
